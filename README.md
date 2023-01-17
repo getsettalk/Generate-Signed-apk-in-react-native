@@ -88,3 +88,19 @@ to create Media files.make sure you have an **assets** folder under **android/ap
 ```
 npx react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/
 ```
+
+
+# ![#FF0032](https://placehold.co/15x15/FF0032/FF0032.png)Step 5. Release APK Generation:
+Place your terminal directory to android using:
+```
+cd android
+```
+>> For Windows,
+```
+gradlew assembleRelease 
+```
+>> For Linix and Mac
+
+``` 
+./gradlew assembleRelease
+```
