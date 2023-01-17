@@ -13,21 +13,21 @@ You can change **your_key_name** with any name you want, as well as **your_key_a
 
 Thus, this command prompts you for the password of the keystore, the actual key, and the distinguished name fields for your key. Hence, everything should be entered manually and carefully:
 
-Enter your keystore password: password123
+> Enter your keystore password: password123
 
-Re-enter new password: password123
+> Re-enter new password: password123
 
-What is your first and last name? [unknown]: Sujeet Kumar
+> What is your first and last name? [unknown]: Sujeet Kumar
 
-What is the name of your organizational unit? [unknown]: Sample Company
+> What is the name of your organizational unit? [unknown]: Sample Company
 
-What is the name of your organization? [unknown]: Sample
+> What is the name of your organization? [unknown]: Sample
 
-What is the name of your city or Locality? [unknown]: XYZ
+> What is the name of your city or Locality? [unknown]: XYZ
 
-What is the name of your State or Province? [unknown]: ABC
+> What is the name of your State or Province? [unknown]: ABC
 
-What is the two-letter country code for this unit? [unknown]: 91
+> What is the two-letter country code for this unit? [unknown]: 91
 
 # ![#FF0032](https://placehold.co/15x15/FF0032/FF0032.png)Step 2. Adding Keystore to your project
   Firstly, you need to copy the file **your_key_name.keystore** and paste it under the android/app directory in your React Native project folder.
