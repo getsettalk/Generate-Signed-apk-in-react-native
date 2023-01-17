@@ -38,5 +38,53 @@ What is the two-letter country code for this unit? [unknown]: 91
 
 # ![#FF0032](https://placehold.co/15x15/FF0032/FF0032.png)Step 3.Do changes in Some file:
 
-You need to open your android\app\build.gradle file and add the keystore configuration. There are two ways of configuring the project with keystore. First, the common and unsecured way:
+You need to open your **android\app\build.gradle** file and add the keystore configuration. There are two ways of configuring the project with keystore. First, the common and unsecured way:
 
+```
+android {
+....
+  signingConfigs {
+   release {
+      storeFile file('your_key_name.keystore')
+      storePassword 'your_key_store_password'
+      keyAlias 'your_key_alias'
+      keyPassword 'your_key_file_alias_password'
+    }
+  }
+  buildTypes {
+    release {
+      ....
+      signingConfig signingConfigs.release
+    }
+  }
+}
+```
+
+**You Have Just Add this Line at signingConfigs Block**
+
+```diff
+ release {
+      storeFile file('your_key_name.keystore')
+      storePassword 'your_key_store_password'
+      keyAlias 'your_key_alias'
+      keyPassword 'your_key_file_alias_password'
+    }
+```
+**And Add this to  buildTypes {
+    release {  Block**
+    
+```
+buildTypes {
+    release {
+      ....
+      signingConfig signingConfigs.release  <----- Only This Comment Debug Line
+    }
+  }
+  ```
+
+# ![#FF0032](https://placehold.co/15x15/FF0032/FF0032.png)Step 4.Run This Command :
+
+to create Media files.make sure you have an **assets** folder under **android/app/src/main/assets**. If it’s not there, create one. Then run the following command to build the bundle.
+```
+npx react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/
+```
