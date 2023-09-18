@@ -85,12 +85,31 @@ buildTypes {
 # ![#FF0032](https://placehold.co/15x15/FF0032/FF0032.png)Step 4.Run This Command :
 
 to create Media files.make sure you have an **assets** folder under **android/app/src/main/assets**. If it’s not there, create one. Then run the following command to build the bundle.
+
+### Create folder inside :
+ > assets  ``android/app/src/main/assets``
+
 ```
 npx react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/
 ```
 
+# 5. Delete these folder (automatic created newly ) :
+![image](https://github.com/getsettalk/Generate-Signed-apk-in-react-native/assets/49394996/0e1638c0-ecae-48ed-a763-92677f99009d)
 
-# ![#FF0032](https://placehold.co/15x15/FF0032/FF0032.png)Step 5. Release APK Generation:
+
+> E:\React-Native\MlmNetworking\android\app\src\main\res\drawable-hdpi
+
+> E:\React-Native\MlmNetworking\android\app\src\main\res\drawable-mdpi
+
+> E:\React-Native\MlmNetworking\android\app\src\main\res\drawable-xhdpi
+
+> E:\React-Native\MlmNetworking\android\app\src\main\res\drawable-xxhdpi
+
+> E:\React-Native\MlmNetworking\android\app\src\main\res\drawable-xxxhdpi  
+
+As Showing in above image you have to delete that it may conflict when building
+
+# ![#FF0032](https://placehold.co/15x15/FF0032/FF0032.png)Step 6. Release APK Generation:
 Place your terminal directory to android using:
 ```
 cd android
