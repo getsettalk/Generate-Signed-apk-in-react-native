@@ -37,7 +37,7 @@ Thus, this command prompts you for the password of the keystore, the actual key,
 
 
 # ![#FF0032](https://placehold.co/15x15/FF0032/FF0032.png)Step 3.Do changes in Some file:
-
+~check below for seprate~
 You need to open your **android\app\build.gradle** file and add the keystore configuration. There are two ways of configuring the project with keystore. First, the common and unsecured way:
 
 ```
