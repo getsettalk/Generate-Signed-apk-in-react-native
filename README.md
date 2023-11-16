@@ -123,3 +123,9 @@ gradlew assembleRelease
 ``` 
 ./gradlew assembleRelease
 ```
+
+>> For generate  .aab 
+```
+cd android
+./gradlew bundleRelease
+```
