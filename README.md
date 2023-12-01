@@ -139,3 +139,7 @@ Option MacOs 1: Disable extended globbing for the command: You can disable exten
 Option 2: Use single quotes to prevent globbing: Enclose the arguments in single quotes to prevent zsh from interpreting the * character:
 
 ``adb logcat '*:S' 'ReactNative:V' 'ReactNativeJS:V'``
+
+
+for windows:::
+`adb logcat *:S ReactNative:V ReactNativeJS:V`
