@@ -129,3 +129,13 @@ gradlew assembleRelease
 cd android
 ./gradlew bundleRelease
 ```
+
+
+## Log your apk to mac and window
+Option MacOs 1: Disable extended globbing for the command: You can disable extended globbing by running the following command before using the adb logcat command:
+
+``set +o extendedglob``
+
+Option 2: Use single quotes to prevent globbing: Enclose the arguments in single quotes to prevent zsh from interpreting the * character:
+
+``adb logcat '*:S' 'ReactNative:V' 'ReactNativeJS:V'``
