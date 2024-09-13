@@ -143,3 +143,20 @@ Option 2: Use single quotes to prevent globbing: Enclose the arguments in single
 
 for windows:::
 `adb logcat *:S ReactNative:V ReactNativeJS:V`
+
+
+
+# Generate SignIn Report
+using this command (debug):
+```
+keytool -keystore android/app/debug.keystore -list -v
+```
+
+you can either navigate to this directory `android/app/`
+
+for release, you have to write that keystore file name with extension and this will ask passoword after execution
+
+To generate a certificate run
+```
+cd android && ./gradlew signingReport
+```
