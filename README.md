@@ -141,8 +141,14 @@ Option 2: Use single quotes to prevent globbing: Enclose the arguments in single
 ``adb logcat '*:S' 'ReactNative:V' 'ReactNativeJS:V'``
 
 
-for windows:::
+for windows==> 
 `adb logcat *:S ReactNative:V ReactNativeJS:V`
+
+## Install Apk directly 
+```
+adb install android/app/build/outputs/apk/release/app-release.apk
+
+```
 
 
 
