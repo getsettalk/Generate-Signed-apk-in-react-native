@@ -38,7 +38,7 @@ Thus, this command prompts you for the password of the keystore, the actual key,
 
 # ![#FF0032](https://placehold.co/15x15/FF0032/FF0032.png)Step 3.Do changes in Some file:
 ~check below for seprate~
-You need to open your **android\app\build.gradle** file and add the keystore configuration. There are two ways of configuring the project with keystore. First, the common and unsecured way:
+You need to open your `android\app\build.gradle` file and add the keystore configuration. There are two ways of configuring the project with keystore. First, the common and unsecured way:
 
 ```
 android {
@@ -84,7 +84,7 @@ buildTypes {
 
 # ![#FF0032](https://placehold.co/15x15/FF0032/FF0032.png)Step 4.Run This Command :
 
-to create Media files.make sure you have an **assets** folder under **android/app/src/main/assets**. If it’s not there, create one. Then run the following command to build the bundle.
+to create Media files.make sure you have an `assets` folder under `android/app/src/main/assets`. If it’s not there, create one. Then run the following command to build the bundle.
 
 ### Create folder inside :
  > assets  ``android/app/src/main/assets``
