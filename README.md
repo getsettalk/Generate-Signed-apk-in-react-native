@@ -132,17 +132,25 @@ cd android
 
 
 ## Log your apk to mac and window
+
+### MacOS detect apk log:
 Option MacOs 1: Disable extended globbing for the command: You can disable extended globbing by running the following command before using the adb logcat command:
 
-``set +o extendedglob``
+```
+set +o extendedglob
+```
 
 Option 2: Use single quotes to prevent globbing: Enclose the arguments in single quotes to prevent zsh from interpreting the * character:
 
-``adb logcat '*:S' 'ReactNative:V' 'ReactNativeJS:V'``
+```
+adb logcat '*:S' 'ReactNative:V' 'ReactNativeJS:V'
+```
 
 
-for windows==> 
-`adb logcat *:S ReactNative:V ReactNativeJS:V`
+### For windows detect log:
+```
+adb logcat *:S ReactNative:V ReactNativeJS:V
+```
 
 ## Install Apk directly 
 ```
